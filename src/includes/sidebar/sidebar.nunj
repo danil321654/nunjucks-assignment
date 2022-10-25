@@ -1,0 +1,7 @@
+{% from "../components/icon/icon.nunj" import icon %}
+{% from "../components/basket/basket.nunj" import basket %}
+
+<div class="sidebar">
+
+	{{ basket() }}
+</div>

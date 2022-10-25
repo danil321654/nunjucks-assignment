@@ -1,6 +1,6 @@
 // ======= GLOBAL =======
 @import 'constants';
-@import 'lib/base';
+@import 'lib/_base.scss';
 @import 'fonts';
 @import 'reset';
 @import 'global';
@@ -9,9 +9,13 @@
 
 // ======= COMPONENTS =======
 @import '../../includes/components/button/button';
+@import '../../includes/components/basket/basket';
+@import '../../includes/components/basket-item/basket-item';
+@import '../../includes/components/menu/menu';
 
 // ======= INCLUDES =======
 @import '../../includes/header/header';
+@import '../../includes/sidebar/sidebar';
 
 // ======= PAGES =======
 @import 'pages/main';

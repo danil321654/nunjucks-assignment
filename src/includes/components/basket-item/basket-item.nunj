@@ -1,0 +1,19 @@
+{% macro basketItem(props) %}
+    <div class="basket-item">
+        <div class="basket-item__card">
+            <div class="basket-item__image {{ props.image }}" ></div>
+            <div class="basket-item__info">
+                <div class="basket-item__title">{{ props.title }}</div>
+                <div class="basket-item__details">
+                    <div class="basket-item__controls">
+                        <div class='basket-item__quantity-button'>–</div>
+                        {{ props.quantity }}
+                        <div class='basket-item__quantity-button'>+</div>
+                    </div>
+                    <div class="basket-item__price">$ {{ props.price }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="basket-item__delete"> delete </div>
+    </div>
+{% endmacro %}

@@ -1,0 +1,61 @@
+.basket-item {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	gap: 44px;
+}
+.basket-item__card {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	gap: 10px;
+	width: 260px;
+}
+.basket-item__image {
+	height: 100px;
+	min-width: 100px;
+
+	&.sneakers {
+		@include s(sneakers);
+	}
+	&.coat {
+		@include s(coat);
+	}
+}
+
+.basket-item__info {
+	margin-top: -5px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.basket-item__details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.basket-item__controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+
+.basket-item__quantity-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	border: $border-width solid black;
+	border-radius: 50%;
+	font-size: 24px;
+}
+
+.basket-item__delete {
+	margin-top: -5px;
+	width: 20px;
+	word-break: break-all;
+}

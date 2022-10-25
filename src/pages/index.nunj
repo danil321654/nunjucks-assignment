@@ -11,7 +11,11 @@
 
 	{% include '../includes/header/header.nunj' %}
 
-	<div class="container">
+	<div class="page-wrapper">
+		{% include '../includes/sidebar/sidebar.nunj' %}
+	</div>
+
+	{# <div class="container">
 
 		<div style="padding:20px 0;">
 			{{ button({
@@ -26,7 +30,7 @@
 			<h2 style="margin-bottom: 15px;">Пример использования циклов и функции range():</h2>
 
 			<div class="row">
-				{% for i in range(1, 13)  %}
+				{% for i in range(1, 13) %}
 					<span>{{ i }}</span>
 				{% endfor %}
 			</div>
@@ -46,7 +50,6 @@
 
 		</div>
 
-		{# Пример с функциями #}
 		<p style="margin-bottom: 20px;">{{ addAwesome('Это текст для теста функций') }}</p>
 
 		{% if DEVELOP %}
@@ -61,12 +64,12 @@
 			<h2 style="margin-bottom: 15px;">Пример использования SVG-спрайта</h2>
 
 			{{ icon({
-				iconName: 'chat',
-				className: 'icon',
+				iconName: 'logo',
+				className: 'icon-logo',
 				attributes: 'viewBox="0 0 20 20" style="width: 40px; height: 40px; fill: #212121;"'
 			}) }}
 
 		</div>
 
-	</div>
+	</div> #}
 {% endblock %}

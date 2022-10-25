@@ -1,0 +1,17 @@
+.basket {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	gap: 30px;
+}
+
+.basket__title {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.basket__items-container {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}

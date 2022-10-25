@@ -1,0 +1,14 @@
+{% from "../basket-item/basket-item.nunj" import basketItem %}
+{% macro basket() %}
+	<div class="basket">
+
+		<div class="basket__title">My basket</div>
+
+		<div class="basket__items-container">
+			{% for item in basketItems %}
+
+				{{ basketItem(item) }}
+			{% endfor %}
+		</div>
+	</div>
+{% endmacro %}

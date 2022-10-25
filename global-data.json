@@ -1,26 +1,42 @@
 {
 	"menuItems": [
 		{
-			"name": "Menu Item 1",
+			"name": "Women's",
 			"path": "#"
 		},
 		{
-			"name": "Menu Item 2",
+			"name": "Men's",
 			"path": "#"
 		},
 		{
-			"name": "Menu Item 3",
+			"name": "Home",
+			"path": "#"
+		},
+		{
+			"name": "Travel",
+			"path": "#"
+		},
+		{
+			"name": "Beauty",
+			"path": "#"
+		},
+		{
+			"name": "Sale",
 			"path": "#"
 		}
 	],
-	"someData": [
+	"basketItems": [
 		{
-			"title": "Item 1",
-			"text": "Desc 1"
+			"image": "coat",
+			"title": "Amet minim mollit non deserunt ullamco est sit",
+			"quantity": "1",
+			"price": "525"
 		},
 		{
-			"title": "Item 2",
-			"text": "Desc 2"
+			"image": "sneakers",
+			"title": "Amet minim mollit non",
+			"quantity": "1",
+			"price": "525"
 		}
 	]
 }
