@@ -1,4 +1,11 @@
 .sidebar {
+	display: none;
 	width: $sidebar-width;
 	border-left: $border-width solid #cfcfcf;
+}
+
+@media screen and (min-width: $tablet-size) {
+	.sidebar {
+		display: block;
+	}
 }

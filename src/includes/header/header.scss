@@ -46,3 +46,9 @@
 	align-items: 'center';
 	justify-content: center;
 }
+
+@media screen and (min-width: $tablet-size) {
+	.header__icon--menu {
+		display: none;
+	}
+}

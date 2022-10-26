@@ -1,3 +1,5 @@
+{% from "../icon/icon.nunj" import icon %}
+
 {% macro basketItem(props) %}
     <div class="basket-item">
         <div class="basket-item__card">
@@ -14,6 +16,11 @@
                 </div>
             </div>
         </div>
-        <div class="basket-item__delete"> delete </div>
+        <div class="basket-item__delete">
+            {{ icon({
+				iconName: 'close',
+				className: 'header__icon'
+			}) }}
+        </div>
     </div>
 {% endmacro %}

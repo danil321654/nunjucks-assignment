@@ -1,0 +1,14 @@
+{% macro checkout() %}
+	<div class="checkout">
+		<div class="checkout__items-container">
+			{% for item in checkoutItems %}
+				<div class="checkout__item{% if item.total %} checkout__item--total {% endif %}">
+					<span>{{ item.title }}
+					</span>
+					<span> ${{ item.value }}
+					</span>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endmacro %}

@@ -22,5 +22,9 @@
 			}) }}
 			<div class="header__shop-counter">2</div>
 		</div>
+		{{ icon({
+				iconName: 'burger',
+				className: 'header__icon header__icon--menu'
+			}) }}
 	</div>
 </div>

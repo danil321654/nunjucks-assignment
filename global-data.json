@@ -38,5 +38,24 @@
 			"quantity": "1",
 			"price": "525"
 		}
+	],
+	"checkoutItems": [
+		{
+			"title": "Subtotal",
+			"value": "1 050"
+		},
+		{
+			"title": "Tax",
+			"value": "100"
+		},
+		{
+			"title": "Shipping",
+			"value": "150"
+		},
+		{
+			"title": "Total",
+			"value": "1 300",
+			"total": "true"
+		}
 	]
 }

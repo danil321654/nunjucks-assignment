@@ -1,0 +1,16 @@
+{% from "../button/button.nunj" import button %}
+{% from "../input/input.nunj" import input %}
+<div class="promocode">
+
+	<div class="promocode__title">Promo code</div>
+
+	<div class="promocode-container">
+		{{ input({
+			placeholder: "Placeholder"
+		}) }}
+		{{ button({
+			action: "true",
+			children: "Apply"
+		}) }}
+	</div>
+</div>

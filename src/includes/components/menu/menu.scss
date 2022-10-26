@@ -1,6 +1,12 @@
 .menu {
-	display: flex;
+	display: none;
 	gap: 50px;
 	height: 100%;
 	align-items: center;
+}
+
+@media screen and (min-width: $tablet-size) {
+	.menu {
+		display: flex;
+	}
 }

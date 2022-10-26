@@ -1,4 +1,4 @@
-.basket {
+.promocode {
 	display: flex;
 	flex-direction: column;
 	padding: 40px;
@@ -6,13 +6,12 @@
 	border-bottom: $border-width solid #cfcfcf;
 }
 
-.basket__title {
+.promocode__title {
 	font-weight: 700;
 	font-size: 18px;
 }
 
-.basket__items-container {
+.promocode-container {
 	display: flex;
-	flex-direction: column;
-	gap: 40px;
+	gap: 10px;
 }
