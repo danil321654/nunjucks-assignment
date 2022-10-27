@@ -1,0 +1,48 @@
+{% from "../input/input.nunj" import input %}
+<div class="billing-card">
+	<div class="billing-card__input billing-card__input--fullwidth">
+		{{ input({
+			id: 'billing-card-name',
+			label: 'Name on card',
+			labelClass: 'billing-card__input-label',
+			placeholder: "Placeholder Text"
+		}) }}
+	</div>
+	<div class="billing-card__input">
+		{{ input({
+			id: 'billing-card-1',
+			label: 'Card number',
+			labelClass: 'billing-card__input-label'
+		}) }}
+	</div>
+	<div class="billing-card__input">
+		{{ input({
+			id: 'billing-card-2'
+		}) }}
+	</div>
+	<div class="billing-card__input">
+		{{ input({
+			id: 'billing-card-3'
+		}) }}
+	</div>
+	<div class="billing-card__input">
+		{{ input({
+			id: 'billing-card-4'
+		}) }}
+	</div>
+	<div class="billing-card__input">
+		{{ input({
+			id: 'billing-card-expire',
+			label: 'Expire date',
+			labelClass: 'billing-card__input-label'
+		}) }}
+	</div>
+	<div class="billing-card__input">
+		{{ input({
+			id: 'billing-card-cvv',
+			label: 'CVV code <span class="billing-card__input-hint">?</span>',
+			labelClass: 'billing-card__input-label'
+		}) }}
+	</div>
+
+</div>

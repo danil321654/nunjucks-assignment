@@ -95,6 +95,12 @@ const utils = {
 			number % 100 > 4 && number % 100 < 20 ? 2 : cases[number % 10 < 5 ? number % 10 : 5]
 		];
 	},
+
+	getNumberFromElement: element =>
+		+element.innerHTML
+			.replace(/&nbsp;/g, ' ')
+			.replace(/\s/g, '')
+			.trim(),
 };
 
 export default utils;

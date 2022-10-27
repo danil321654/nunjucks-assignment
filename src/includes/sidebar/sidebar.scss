@@ -1,11 +1,16 @@
 .sidebar {
 	display: none;
+	position: absolute;
+	right: 0;
 	width: $sidebar-width;
 	border-left: $border-width solid #cfcfcf;
+	background: #ffffff;
+	z-index: 11;
 }
 
 @media screen and (min-width: $tablet-size) {
 	.sidebar {
 		display: block;
+		position: relative;
 	}
 }

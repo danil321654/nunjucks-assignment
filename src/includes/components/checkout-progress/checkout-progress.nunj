@@ -1,0 +1,17 @@
+<div class="checkout-progress">
+	<div class="checkout-progress__items-container">
+		{% for item in checkoutProgressItems %}
+			<div class="checkout-progress__item">
+				<div class="checkout-progress__item-circle{% if item.modifiers %}{% for modifier in item.modifiers %} checkout-progress__item-circle--{{ modifier }}{% endfor %}{% endif %}">
+					{{ item.number }}
+				</div>
+
+				<div class="checkout-progress__item-title">
+					{{ item.title }}
+				</div>
+			</div>
+			<div class="checkout-progress__item-line{% if item.modifiers %}{% for modifier in item.modifiers %} checkout-progress__item-line--{{ modifier }}{% endfor %}{% endif %}"></div>
+		{% endfor %}
+	</div>
+
+</div>

@@ -5,7 +5,10 @@
 				<div class="checkout__item{% if item.total %} checkout__item--total {% endif %}">
 					<span>{{ item.title }}
 					</span>
-					<span> ${{ item.value }}
+					<span class="checkout__item-value">
+							$<span class="{% if item.recount %}checkout__item-recount{% endif %}" >
+							{{ item.value }}
+						</span>
 					</span>
 				</div>
 			{% endfor %}

@@ -6,7 +6,7 @@
 
 	<div class="promocode-container">
 		{{ input({
-			placeholder: "Placeholder"
+			placeholder: "Placeholder Text"
 		}) }}
 		{{ button({
 			action: "true",

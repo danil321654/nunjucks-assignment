@@ -1,0 +1,4 @@
+<div class="main">
+	{% include '../components/checkout-progress/checkout-progress.nunj' %}
+	{% include '../components/billing/billing.nunj' %}
+</div>

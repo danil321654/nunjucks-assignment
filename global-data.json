@@ -42,7 +42,8 @@
 	"checkoutItems": [
 		{
 			"title": "Subtotal",
-			"value": "1 050"
+			"value": "1 050",
+			"recount": "true"
 		},
 		{
 			"title": "Tax",
@@ -55,7 +56,14 @@
 		{
 			"title": "Total",
 			"value": "1 300",
+			"recount": "true",
 			"total": "true"
 		}
+	],
+	"checkoutProgressItems": [
+		{ "number": "1", "title": "Account", "modifiers": ["passed"] },
+		{ "number": "2", "title": "Shipping", "modifiers": ["passed"] },
+		{ "number": "3", "title": "Billing", "modifiers": ["active"] },
+		{ "number": "4", "title": "Review", "modifiers": [] }
 	]
 }

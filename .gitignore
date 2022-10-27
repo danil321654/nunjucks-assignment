@@ -10,3 +10,4 @@ temp/
 *.sublime*
 package-lock.json
 yarn.lock
+*.css

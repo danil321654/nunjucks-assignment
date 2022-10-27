@@ -14,6 +14,11 @@
 	line-height: 34px;
 	justify-content: space-between;
 	gap: 200px;
+	width: 100%;
+}
+
+.checkout__item-value {
+	width: max-content;
 }
 
 .checkout__item--total {

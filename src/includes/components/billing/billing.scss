@@ -1,0 +1,58 @@
+.billing {
+	display: flex;
+	flex-direction: column;
+	width: 690px;
+	margin: 60px auto;
+	gap: 40px;
+}
+
+.billing__title {
+	font-weight: 700;
+	font-size: 18px;
+	padding: 0 30px;
+}
+
+.billing__payment-type {
+	display: flex;
+	gap: 80px;
+	padding: 0 30px;
+}
+
+.billing__payment-type-input {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	gap: 8px;
+}
+
+.billing__paypal-icon {
+	width: 85px;
+	height: 23px;
+}
+
+.billing__agree {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 0 30px;
+}
+
+.billing__agree-input {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	gap: 8px;
+}
+
+.billing__agree-input-label {
+	color: #8c8c8c;
+}
+
+.billing__link {
+	color: #000000;
+}
+
+.billing__buttons-container {
+	display: flex;
+	justify-content: space-between;
+}

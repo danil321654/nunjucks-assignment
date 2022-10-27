@@ -1,7 +1,7 @@
 {% from "../components/basket/basket.nunj" import basket %}
 {% from "../components/checkout/checkout.nunj" import checkout %}
 
-<div class="sidebar">
+<div class="sidebar" id="sidebar">
 	{{ basket() }}
 	{% include '../components/promocode/promocode.nunj' %}
 	{{ checkout() }}

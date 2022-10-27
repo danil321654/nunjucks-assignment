@@ -24,7 +24,7 @@
 		</div>
 		{{ icon({
 				iconName: 'burger',
-				className: 'header__icon header__icon--menu'
+				className: 'header__icon header__icon-menu'
 			}) }}
 	</div>
 </div>

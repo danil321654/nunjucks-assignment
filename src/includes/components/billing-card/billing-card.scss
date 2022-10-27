@@ -1,0 +1,43 @@
+.billing-card {
+	display: grid;
+	align-content: flex-start;
+	border: 1px solid #cfcfcf;
+	box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	width: 550px;
+	height: 298px;
+	padding: 20px 30px;
+	row-gap: 20px;
+	column-gap: 30px;
+	flex-wrap: wrap;
+	grid-template-columns: repeat(4, 1fr);
+}
+.billing-card__input {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 8px;
+}
+.billing-card__input--fullwidth {
+	width: 100%;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
+}
+
+.billing-card__input-label {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 24px;
+	color: #555770;
+}
+
+.billing-card__input-hint {
+	font-size: 10px;
+	line-height: 10px;
+	background: #dbdbdb;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}

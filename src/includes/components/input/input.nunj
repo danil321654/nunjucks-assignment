@@ -1,3 +1,12 @@
 {% macro input(props) %}
-	<input class="input" {% if props.placeholder %} placeholder="{{ props.placeholder }}" {% endif %}/>
+	<input class="input" {% if props.type %} type="{{ props.type }}" {% endif %} 
+	{% if props.placeholder %} placeholder="{{ props.placeholder }}" {% endif %} 
+	{% if props.checked %} checked {% endif %}
+	{% if props.id %} id={{ props.id }} {% endif %}
+	/>
+	{% if props.label %}
+		<label {% if props.id %} for={{ props.id }} {% endif %} {% if props.labelClass %} class={{ props.labelClass }} {% endif %}>
+			{{ props.label }}
+		</label>
+	{% endif %}
 {% endmacro %}

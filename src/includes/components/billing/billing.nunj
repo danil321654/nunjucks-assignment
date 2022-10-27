@@ -1,0 +1,59 @@
+{% from "../button/button.nunj" import button %}
+{% from "../input/input.nunj" import input %}
+{% from "../icon/icon.nunj" import icon %}
+<div class="billing">
+
+	<div class="billing__title">Billing Information</div>
+
+	<div class="billing__payment-type">
+		<div class="billing__payment-type-input">
+			{{ input({
+					type: "radio",
+					id: 'credit_card-radio',
+					label: 'Pay with Credit Card',
+					checked: true
+				}) }}
+		</div>
+		<div class="billing__payment-type-input">
+			{{ input({
+					type: "radio",
+					id: "paypal-radio",
+					label:  icon({
+						iconName: 'paypal',
+						className: 'billing__paypal-icon'
+					})
+				}) }}
+		</div>
+	</div>
+	{% include '../billing-card/billing-card.nunj' %}
+	<div class="billing__agree">
+		<div class="billing__agree-input">
+			{{ input({
+					type: "checkbox",
+					id: 'save-checkbox',
+					label: '
+								Save information of this credit card',
+					checked: true,
+					labelClass: 'billing__agree-input-label'
+				}) }}
+		</div>
+		<div class="billing__agree-input">
+			{{ input({
+					type: "checkbox",
+					id: "accept-checkbox",
+					label:  'I accept the <a href="#" class="billing__link">terms and conditions</a> 
+							and the <a href="#" class="billing__link">Privacy Policies</a>',
+					labelClass: 'billing__agree-input-label'
+				}) }}
+		</div>
+	</div>
+	<div class="billing__buttons-container">
+		{{ button({
+			children: "Back"
+		}) }}
+		{{ button({
+			action: "true",
+			children: "Check Out"
+		}) }}
+	</div>
+</div>

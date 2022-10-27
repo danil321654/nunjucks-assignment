@@ -8,19 +8,17 @@
                 <div class="basket-item__title">{{ props.title }}</div>
                 <div class="basket-item__details">
                     <div class="basket-item__controls">
-                        <div class='basket-item__quantity-button'>–</div>
-                        {{ props.quantity }}
-                        <div class='basket-item__quantity-button'>+</div>
+                        <div class='basket-item__quantity-button basket-item__quantity-button--decrease'>–</div>
+                        <span class="basket-item__quantity">{{ props.quantity }}</span>
+                        <div class='basket-item__quantity-button basket-item__quantity-button--increase'>+</div>
                     </div>
-                    <div class="basket-item__price">$ {{ props.price }}</div>
+                    <div class="basket-item__price">$ <span class="basket-item__price-numeric">{{ props.price }}</span></div>
                 </div>
             </div>
         </div>
-        <div class="basket-item__delete">
-            {{ icon({
+        {{ icon({
 				iconName: 'close',
-				className: 'header__icon'
-			}) }}
-        </div>
+				className: 'basket-item__quantity-button--delete'
+		}) }}
     </div>
 {% endmacro %}

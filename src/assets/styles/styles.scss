@@ -14,11 +14,15 @@
 @import '../../includes/components/basket-item/basket-item';
 @import '../../includes/components/promocode/promocode';
 @import '../../includes/components/checkout/checkout';
+@import '../../includes/components/checkout-progress/checkout-progress';
 @import '../../includes/components/menu/menu';
+@import '../../includes/components/billing/billing';
+@import '../../includes/components/billing-card/billing-card';
 
 // ======= INCLUDES =======
 @import '../../includes/header/header';
 @import '../../includes/sidebar/sidebar';
+@import '../../includes/main/main';
 
 // ======= PAGES =======
 @import 'pages/main';
